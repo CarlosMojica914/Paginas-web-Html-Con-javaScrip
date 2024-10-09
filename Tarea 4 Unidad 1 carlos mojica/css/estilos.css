@@ -1,0 +1,52 @@
+/* Asignar margen al body y cambiar la fuente */
+body {
+    margin: 20px;
+    font-family: Verdana;
+}
+
+/* Selector para todas las etiquetas con ancho de 200px */
+label, input, textarea, select {
+    width: 200px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Estilo específico para el input de email */
+input[name="email"] {
+    background-color: #eeeeee;
+}
+
+/* Selector múltiple para párrafos y etiquetas */
+p, label {
+    font-family: Tahoma;
+}
+
+/* Ajustes para el textarea */
+textarea {
+    width: 100%;
+    height: 100px; /* Puedes ajustar la altura si prefieres */
+    resize: vertical; /* Permite solo ajustar verticalmente */
+}
+
+/* Ajuste para botones */
+  input[type="submit"] {
+   width: auto; /* Para que no herede el ancho de 200px */
+}
+
+/* Alinear los botones de radio y el texto de género */
+input[type="radio"] {
+    width: auto; /* Dejar que el ancho sea automático */
+    display: inline-block; /* Mantenerlos en línea con el texto */
+    margin-right: 10px; /* Añadir espacio entre el botón y el texto */
+}
+
+/* Alinear las etiquetas del género */
+label[for="genre"] {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+p input[type="radio"] + label {
+    display: inline-block;
+    margin-left: 10px;
+}
